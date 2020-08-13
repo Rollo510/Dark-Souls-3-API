@@ -80,4 +80,10 @@ class API
   def self.get_events(zipcode) zipcode is user input
     
   end
-    
+
+
+Update Assist: https://www.microsoft.com/en-us/software-download/windows10ISO
+How to Terminal: https://youtu.be/oxuRxtrO2Ag
+How to Git: https://youtu.be/SWYqp7iY_Tc
+cd ~/Development/code
+
