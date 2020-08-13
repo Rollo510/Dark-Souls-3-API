@@ -1,0 +1,83 @@
+bundle gem "Dark Souls 3 API"
+MIT license - yes
+code events/
+should set up all the folders and files we normally see on Learn.
+
+
+terminal set up
+
+git init
+  github.com
+git status
+git add .
+git commit -m "first commit" this is a message as a status essentially
+to send to github:
+  git remote add origin https://github.com/etc. to put into the terminal.
+git push -u origin master 
+  normally just git push origin master, only need to do it once with -u
+  
+create a new file in bin
+    "run" -- executable file
+#!/usr/bin/env ruby in run file is a "Shabang line" it converts the whole expression to ruby.
+
+I need to map out how I Want the app to work:
+
+// welcome the user?
+CLI Class -- deals with stuff showing on the terminal
+API Class -- deals with API stuff
+Something Dark Souls 3 Class -- to hold all objects and stuff
+
+environment file
+    holds all of my classes and all of my gems?
+  
+might not need version.rb file either
+
+lib/DarkSouls/3classesfromabove
+  
+
+
+class CLI
+  def start
+    puts "hello"
+    puts "please select a category:"
+    input = gets.strip
+    API.get_events(input)
+    Event.all.each.with_index(1) do ||
+  end
+end
+
+class Dark Souls
+  @@all = []
+
+  def initialize
+    @@all << self
+  end
+
+  def self.all
+    @@all
+  end
+end
+
+in environment.rb
+  require "./lib/darksouls/cli"
+  require "./lib/darksouls/api"
+  same with dark souls
+
+
+run file in bin >>
+  cd bin
+  ls -lah
+  if your things arent the same do: chmod +x run "folder name"
+
+
+we want to connect the run file to our environment file
+
+run file:
+require './lib/environment' in the run file
+CLI.new.start(this should welcome the user)
+
+class API
+  def self.get_events(zipcode) zipcode is user input
+    
+  end
+    
